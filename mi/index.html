@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+        .content {
+            width: 1226px;
+            height: 628px;
+            margin: 30px auto;
+        }
+        .bann {
+            float: left;
+            width: 234px;
+            height: 614px;
+
+            /* CSS3 中为了使效果发生不那么生硬，可以加上过渡属性 */
+            transition: transform .2s linear;
+        }
+        .pro {
+            float: left;
+            width: 992px;
+            height: 628px;
+        }
+        .pro li {
+            float: left;
+            width: 234px;
+            height: 300px;
+            background-color: #fff;
+            margin-left: 14px;
+            margin-bottom: 14px;
+
+            /* CSS3 中为了使效果发生不那么生硬，可以加上过渡属性 */
+            transition: transform .2s linear;
+        }
+        .bann:hover,
+        .pro li:hover {
+            /* CSS3 中转换属性可以实现保留位置的位移效果 */
+            transform: translateY(-2px);
+            /* CSS3 中给盒子加上阴影的写法 */
+            /* box-shadow： 水平位移  垂直位移  模糊值  扩展值  颜色 */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+        }
+        .bann img {
+            width: 100%;
+        }
+
+        .new-pro {
+            width: 64px;
+            height: 20px;
+            margin: 0 auto;
+            color: #fff;
+            line-height: 20px;
+            text-align: center;
+            background-color: #83c44e;
+            font-size: 12px;
+        }
+        .zhe {
+            background-color: #e53935;
+        }
+        .phone-pic {
+            text-align: center;
+        }
+        .phone-pic img {
+            width: 160px;
+        }
+        .pro h3 {
+            height: 21px;
+            line-height: 21px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 2px;
+        }
+        .pro h3 a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .pro .desc {
+            font-size: 12px;
+            color: #ccc;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .pro .price {
+            font-size: 14px;
+            color: #ff6700;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="bann">
+            <img src="images/picBig.jpg" alt="">
+        </div>
+        <div class="pro">
+            <ul>
+                <li>
+                    <div class="new-pro">新品</div>
+                    <div class="phone-pic">
+                        <a href="#">
+                            <img src="images/pic01.jpg" alt="">
+                        </a>
+                    </div>
+                    <h3>
+                        <a href="#">小米9 6GB+128GB</a>
+                    </h3>
+                    <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>
+                    <p class="price">2999元</p>
+                </li>
+                <li>
+                    <div class="new-pro">新品</div>
+                    <div class="phone-pic">
+                        <a href="#">
+                            <img src="images/pic02.jpg" alt="">
+                        </a>
+                    </div>
+                    <h3>
+                        <a href="#">小米9 6GB+128GB</a>
+                    </h3>
+                    <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>
+                    <p class="price">2999元</p>
+                </li>
+                <li>
+                    <div class="new-pro">新品</div>
+                    <div class="phone-pic">
+                        <a href="#">
+                            <img src="images/pic03.jpg" alt="">
+                        </a>
+                    </div>
+                    <h3>
+                        <a href="#">小米9 6GB+128GB</a>
+                    </h3>
+                    <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>
+                    <p class="price">2999元</p>
+                </li>
+                <li>
+                    <div class="new-pro">新品</div>
+                    <div class="phone-pic">
+                        <a href="#">
+                            <img src="images/pic04.png" alt="">
+                        </a>
+                    </div>
+                    <h3>
+                        <a href="#">小米9 6GB+128GB</a>
+                    </h3>
+                    <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>
+                    <p class="price">2999元</p>
+                </li>
+                <li>
+                    <div class="new-pro zhe">减200元</div>
+                    <div class="phone-pic">
+                        <a href="#">
+                            <img src="images/pic05.jpg" alt="">
+                        </a>
+                    </div>
+                    <h3>
+                        <a href="#">小米9 6GB+128GB</a>
+                    </h3>
+                    <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>
+                    <p class="price">2999元</p>
+                </li>
+                <li>
+                    <div class="new-pro zhe">享8折</div>
+                    <div class="phone-pic">
+                        <a href="#">
+                            <img src="images/pic06.jpg" alt="">
+                        </a>
+                    </div>
+                    <h3>
+                        <a href="#">小米9 6GB+128GB</a>
+                    </h3>
+                    <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>
+                    <p class="price">2999元</p>
+                </li>
+                <li>
+                    <div class="new-pro zhe">享8折</div>
+                    <div class="phone-pic">
+                        <a href="#">
+                            <img src="images/pic07.jpg" alt="">
+                        </a>
+                    </div>
+                    <h3>
+                        <a href="#">小米9 6GB+128GB</a>
+                    </h3>
+                    <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>
+                    <p class="price">2999元</p>
+                </li>
+                <li>
+                    <div class="new-pro zhe">减50元</div>
+                    <div class="phone-pic">
+                        <a href="#">
+                            <img src="images/pic08.jpg" alt="">
+                        </a>
+                    </div>
+                    <h3>
+                        <a href="#">小米9 6GB+128GB</a>
+                    </h3>
+                    <p class="desc">骁龙855，索尼4800万超广角微距三摄</p>
+                    <p class="price">2999元</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
